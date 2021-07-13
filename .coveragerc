@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = d3a_blockchain
+parallel = True
+
+[report]
+show_missing = true

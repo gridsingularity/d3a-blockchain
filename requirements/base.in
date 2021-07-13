@@ -1,0 +1,4 @@
+pip==20.3.1
+pip-tools==5.4.0
+tox
+substrate-interface

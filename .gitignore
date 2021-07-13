@@ -1,0 +1,15 @@
+.idea
+.tox
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+
+# pyenv
+.python-version
+
+dist
+*.egg-info
+__pycache__
+build/
