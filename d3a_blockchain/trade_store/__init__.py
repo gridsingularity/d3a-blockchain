@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-DEFAULT_SUBSTRATE_URL = "wss://canvas-node.dev.gridsingularity.com/"
+DEFAULT_SUBSTRATE_URL = "wss://charlie-node.dev.gridsingularity.com/"
 TEMPLATE_NODE_ADDRESS_TYPE = 42
 
 custom_type_registry = {
