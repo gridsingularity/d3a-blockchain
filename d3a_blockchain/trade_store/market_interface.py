@@ -31,30 +31,6 @@ from substrateinterface.exceptions import SubstrateRequestException
 logger = logging.getLogger()
 
 
-class NonBlockchainInterface:
-    def __init__(self, market_id, simulation_id=None):
-        self.market_id = market_id
-        self.simulation_id = simulation_id
-
-    def create_new_offer(self, energy, price, seller):
-        return str(uuid.uuid4())
-
-    def cancel_offer(self, offer):
-        pass
-
-    def change_offer(self, offer, original_offer, residual_offer):
-        pass
-
-    def handle_blockchain_trade_event(self, offer, buyer, original_offer, residual_offer):
-        return str(uuid.uuid4()), residual_offer
-
-    def track_trade_event(self, time_slot, trade):
-        pass
-
-    def bc_listener(self):
-        pass
-
-
 class SubstrateBlockchainInterface:
     def __init__(self, market_id, simulation_id=None):
         self.market_id = market_id

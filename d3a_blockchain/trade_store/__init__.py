@@ -65,12 +65,3 @@ custom_type_registry = {
         }
     }
 }
-
-
-def blockchain_interface_factory(should_use_bc, market_id, simulation_id):
-    if should_use_bc:
-        from d3a_blockchain.trade_store.market_interface import SubstrateBlockchainInterface
-        return SubstrateBlockchainInterface(market_id, simulation_id)
-    else:
-        from d3a_blockchain.trade_store.market_interface import NonBlockchainInterface
-        return NonBlockchainInterface(market_id, simulation_id)
