@@ -16,7 +16,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
-DEFAULT_SUBSTRATE_URL = "wss://charlie-node.dev.gridsingularity.com/"
+DEFAULT_SUBSTRATE_URL = "wss://verifier-node.dev.gridsingularity.com/"
 TEMPLATE_NODE_ADDRESS_TYPE = 42
 
 custom_type_registry = {
@@ -64,4 +64,20 @@ custom_type_registry = {
             ]
         }
     }
+}
+
+template_type_registry = {
+  "runtime_id": 2,
+  "types": {
+    "MyCustomInt": "u32",
+    "MyStruct": {
+      "type": "struct",
+      "type_mapping": [
+         ["account", "AccountId"],
+         ["message", "Vec<u8>"]
+      ]
+    }
+  },
+  "versioning": [
+  ]
 }
