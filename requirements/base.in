@@ -1,4 +1,3 @@
-pip-tools
 tox
 substrate-interface==0.13.9
 -e git+https://github.com/gridsingularity/d3a-interface@master#egg=d3a_interface
