@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements/base.txt requirements/base.in
 #
--e git+https://github.com/gridsingularity/d3a-interface@update_dependencies#egg=d3a_interface
+-e git+https://github.com/gridsingularity/d3a-interface@master#egg=d3a_interface
     # via -r requirements/base.in
 attrs==21.2.0
     # via
