@@ -1,6 +1,5 @@
 from substrateinterface import SubstrateInterface, Keypair
 from substrateinterface.exceptions import SubstrateRequestException
-from trade_store.constants import mnemonic
 
 template_type_registry = {
   "runtime_id": 2,
@@ -18,7 +17,7 @@ template_type_registry = {
   ]
 }
 
-verifier_node_url="wss://verifier-node.dev.gridsingularity.com"
+verifier_node_url = "wss://verifier-node.dev.gridsingularity.com"
 template_call_module = 'TemplateModule'
 template_call_function = 'do_something'
 address_type = 42
@@ -31,7 +30,9 @@ substrate = SubstrateInterface(
 )
 
 keypair = Keypair.create_from_mnemonic(mnemonic='', ss58_format=0)
-block = substrate.get_block(block_hash=None) # block_hash=None by default gives the genesis block
+
+# block_hash=None by default gives the genesis block
+block = substrate.get_block(block_hash=None)
 
 # ensure you have enough funds before calling this module
 balance_call_params = {
@@ -55,7 +56,8 @@ extrinsic = substrate.create_signed_extrinsic(call=template_call, keypair=keypai
 
 try:
     receipt = substrate.submit_extrinsic(extrinsic, wait_for_inclusion=True)
-    print("Extrinsic '{}' sent and included in block '{}'".format(receipt.extrinsic_hash, receipt.block_hash))
+    print("Extrinsic '{}' sent and included in block '{}'".format(receipt.extrinsic_hash,
+                                                                  receipt.block_hash))
 
 except SubstrateRequestException as e:
     print("Failed to send: {}".format(e))
