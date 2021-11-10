@@ -4,18 +4,18 @@
 #
 #    pip-compile --output-file=requirements/tests.txt requirements/tests.in
 #
--e git+https://github.com/gridsingularity/d3a-interface@master#egg=d3a_interface
+-e git+https://github.com/gridsingularity/gsy-framework@master#egg=gsy_framework
     # via -r requirements/base.txt
 attrs==21.2.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   jsonschema
     #   pytest
 backports.entry-points-selectable==1.1.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 base58==2.0.1
     # via
@@ -25,18 +25,18 @@ base58==2.0.1
 certifi==2021.10.8
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   requests
     #   substrate-interface
 cfgv==3.3.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 chardet==4.0.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   requests
 coverage==6.1.1
     # via -r requirements/tests.in
@@ -45,37 +45,37 @@ deepdiff==5.6.0
 distlib==0.3.3
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 entrypoints==0.3
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 filelock==3.3.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   tox
     #   virtualenv
 flake8==3.7.9
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   flake8-tuple
 flake8-tuple==0.4.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 identify==2.3.3
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 idna==2.10
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   requests
     #   substrate-interface
 iniconfig==1.1.1
@@ -85,15 +85,15 @@ isort==5.9.3
 jsonschema==4.1.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 kafka-python==2.0.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 mccabe==0.6.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 more-itertools==8.8.0
     # via
@@ -102,39 +102,39 @@ more-itertools==8.8.0
 nodeenv==1.6.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 ordered-set==4.0.2
     # via deepdiff
 packaging==21.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pytest
     #   tox
 pendulum==2.1.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 platformdirs==2.4.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 pluggy==1.0.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pytest
     #   tox
 pre-commit==2.15.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 py==1.10.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pytest
     #   tox
 py-bip39-bindings==0.1.7
@@ -153,48 +153,48 @@ pycodestyle==2.5.0
     # via
     #   -r requirements/base.txt
     #   -r requirements/tests.in
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 pyflakes==2.1.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 pyparsing==2.4.7
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   packaging
 pyrsistent==0.18.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   jsonschema
 pytest==6.2.5
     # via -r requirements/tests.in
 python-dateutil==2.8.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pendulum
 pytzdata==2020.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pendulum
 pyyaml==6.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 redis==3.5.3
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 requests==2.25.1
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   scalecodec
     #   substrate-interface
 scalecodec==0.11.16
@@ -204,7 +204,7 @@ scalecodec==0.11.16
 six==1.16.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   flake8-tuple
     #   python-dateutil
     #   tox
@@ -215,27 +215,27 @@ substrate-interface==0.13.9
 tabulate==0.8.9
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 toml==0.10.2
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
     #   pytest
     #   tox
 tox==3.24.4
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 urllib3==1.26.7
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   requests
 virtualenv==20.10.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
     #   tox
 websocket-client==0.58.0
@@ -245,7 +245,7 @@ websocket-client==0.58.0
 websockets==10.0
     # via
     #   -r requirements/base.txt
-    #   d3a-interface
+    #   gsy-framework
 xxhash==2.0.2
     # via
     #   -r requirements/base.txt

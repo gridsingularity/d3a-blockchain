@@ -15,15 +15,15 @@ with open("README.md", "r") as readme:
 VERSION = '1.0.0'
 
 setup(
-    name="d3a-blockchain",
-    description="D3A Blockchain",
+    name="gsy-dex",
+    description="GSy Decentralized Exchange",
     long_description=README,
     author='GridSingularity',
     author_email='d3a@gridsingularity.com',
-    url='https://github.com/gridsingularity/d3a-blockchain',
+    url='https://github.com/gridsingularity/gsy-dex',
     version=VERSION,
     packages=find_packages(where=".", exclude=["tests"]),
-    package_dir={"d3a_blockchain": "d3a_blockchain"},
+    package_dir={"gsy_dex": "gsy_dex"},
     package_data={},
     install_requires=REQUIREMENTS,
     zip_safe=False,

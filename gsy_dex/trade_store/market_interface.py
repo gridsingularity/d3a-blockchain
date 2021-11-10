@@ -19,9 +19,9 @@ import logging
 import uuid
 from datetime import datetime
 
-from d3a_blockchain.trade_store import (
+from gsy_dex.trade_store import (
     DEFAULT_SUBSTRATE_URL, template_type_registry, TEMPLATE_NODE_ADDRESS_TYPE)
-from d3a_blockchain.trade_store.constants import (
+from gsy_dex.trade_store.constants import (
     mnemonic, BOB_STASH_ADDRESS, ALICE_STASH_ADDRESS, ENERGY_SCALING_FACTOR, RATE_SCALING_FACTOR,
     default_call_module, default_call_function, address_type)
 from substrateinterface import Keypair  # NOQA

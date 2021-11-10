@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = d3a_blockchain
+source = gsy_dex
 parallel = True
 
 [report]

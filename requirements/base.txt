@@ -4,15 +4,15 @@
 #
 #    pip-compile --output-file=requirements/base.txt requirements/base.in
 #
--e git+https://github.com/gridsingularity/d3a-interface@master#egg=d3a_interface
+-e git+https://github.com/gridsingularity/gsy-framework@master#egg=gsy_framework
     # via -r requirements/base.in
 attrs==21.2.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   jsonschema
 backports.entry-points-selectable==1.1.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 base58==2.0.1
     # via
@@ -20,78 +20,78 @@ base58==2.0.1
     #   substrate-interface
 certifi==2021.10.8
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   requests
     #   substrate-interface
 cfgv==3.3.1
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 chardet==4.0.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   requests
 distlib==0.3.3
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 entrypoints==0.3
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 filelock==3.3.2
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   tox
     #   virtualenv
 flake8==3.7.9
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8-tuple
 flake8-tuple==0.4.1
-    # via d3a-interface
+    # via gsy-framework
 identify==2.3.3
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 idna==2.10
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   requests
     #   substrate-interface
 jsonschema==4.1.2
-    # via d3a-interface
+    # via gsy-framework
 kafka-python==2.0.2
-    # via d3a-interface
+    # via gsy-framework
 mccabe==0.6.1
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 more-itertools==8.8.0
     # via scalecodec
 nodeenv==1.6.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 packaging==21.2
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   tox
 pendulum==2.1.2
-    # via d3a-interface
+    # via gsy-framework
 platformdirs==2.4.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   virtualenv
 pluggy==1.0.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   tox
 pre-commit==2.15.0
-    # via d3a-interface
+    # via gsy-framework
 py==1.10.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   tox
 py-bip39-bindings==0.1.7
     # via substrate-interface
@@ -101,44 +101,44 @@ py-sr25519-bindings==0.1.3
     # via substrate-interface
 pycodestyle==2.5.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 pyflakes==2.1.1
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8
 pyparsing==2.4.7
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   packaging
 pyrsistent==0.18.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   jsonschema
 python-dateutil==2.8.2
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pendulum
 pytzdata==2020.1
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pendulum
 pyyaml==6.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
 redis==3.5.3
-    # via d3a-interface
+    # via gsy-framework
 requests==2.25.1
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   scalecodec
     #   substrate-interface
 scalecodec==0.11.16
     # via substrate-interface
 six==1.16.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   flake8-tuple
     #   python-dateutil
     #   tox
@@ -147,26 +147,26 @@ six==1.16.0
 substrate-interface==0.13.9
     # via -r requirements/base.in
 tabulate==0.8.9
-    # via d3a-interface
+    # via gsy-framework
 toml==0.10.2
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
     #   tox
 tox==3.24.4
-    # via d3a-interface
+    # via gsy-framework
 urllib3==1.26.7
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   requests
 virtualenv==20.10.0
     # via
-    #   d3a-interface
+    #   gsy-framework
     #   pre-commit
     #   tox
 websocket-client==0.58.0
     # via substrate-interface
 websockets==10.0
-    # via d3a-interface
+    # via gsy-framework
 xxhash==2.0.2
     # via substrate-interface

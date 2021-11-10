@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 from collections import namedtuple
 from logging import getLogger
-from d3a_blockchain.trade_store.utils import unlock_account
+from gsy_dex.trade_store.utils import unlock_account
 
 
 log = getLogger(__name__)
