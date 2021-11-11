@@ -19,7 +19,7 @@ setup(
     description="GSy Decentralized Exchange",
     long_description=README,
     author='GridSingularity',
-    author_email='d3a@gridsingularity.com',
+    author_email='contact@gridsingularity.com',
     url='https://github.com/gridsingularity/gsy-dex',
     version=VERSION,
     packages=find_packages(where=".", exclude=["tests"]),
