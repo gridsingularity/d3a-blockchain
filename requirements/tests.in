@@ -1,7 +1,6 @@
 -r base.txt
 
 coverage
-pycodestyle==2.5.0
 isort
 pytest
 deepdiff

@@ -35,19 +35,15 @@ distlib==0.3.3
     # via
     #   gsy-framework
     #   virtualenv
-entrypoints==0.3
-    # via
-    #   gsy-framework
-    #   flake8
 filelock==3.3.2
     # via
     #   gsy-framework
     #   tox
     #   virtualenv
-flake8==3.7.9
+flake8==4.0.1
     # via
-    #   gsy-framework
     #   flake8-tuple
+    #   gsy-framework
 flake8-tuple==0.4.1
     # via gsy-framework
 identify==2.3.3
@@ -65,8 +61,8 @@ kafka-python==2.0.2
     # via gsy-framework
 mccabe==0.6.1
     # via
-    #   gsy-framework
     #   flake8
+    #   gsy-framework
 more-itertools==8.8.0
     # via scalecodec
 nodeenv==1.6.0
@@ -99,14 +95,14 @@ py-ed25519-bindings==0.1.3
     # via substrate-interface
 py-sr25519-bindings==0.1.3
     # via substrate-interface
-pycodestyle==2.5.0
+pycodestyle==2.8.0
     # via
-    #   gsy-framework
     #   flake8
-pyflakes==2.1.1
+    #   gsy-framework
+pyflakes==2.4.0
     # via
-    #   gsy-framework
     #   flake8
+    #   gsy-framework
 pyparsing==2.4.7
     # via
     #   gsy-framework
@@ -138,8 +134,8 @@ scalecodec==0.11.16
     # via substrate-interface
 six==1.16.0
     # via
-    #   gsy-framework
     #   flake8-tuple
+    #   gsy-framework
     #   python-dateutil
     #   tox
     #   virtualenv
