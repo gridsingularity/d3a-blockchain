@@ -19,11 +19,11 @@ import logging
 import uuid
 from datetime import datetime
 
-from gsy_dex.trade_store import (
-    DEFAULT_SUBSTRATE_URL, template_type_registry, TEMPLATE_NODE_ADDRESS_TYPE)
+from gsy_dex.trade_store import template_type_registry
 from gsy_dex.trade_store.constants import (
     mnemonic, BOB_STASH_ADDRESS, ALICE_STASH_ADDRESS, ENERGY_SCALING_FACTOR, RATE_SCALING_FACTOR,
-    default_call_module, default_call_function, address_type)
+    default_call_module, default_call_function,
+    TEMPLATE_NODE_ADDRESS_TYPE, DEFAULT_SUBSTRATE_URL)
 from substrateinterface import Keypair  # NOQA
 from substrateinterface import SubstrateInterface
 from substrateinterface.exceptions import SubstrateRequestException
@@ -37,13 +37,13 @@ class SubstrateBlockchainInterface:
         self.simulation_id = simulation_id
         self.substrate = SubstrateInterface(
             url=DEFAULT_SUBSTRATE_URL,
-            address_type=TEMPLATE_NODE_ADDRESS_TYPE,
+            ss58_format=TEMPLATE_NODE_ADDRESS_TYPE,
             type_registry_preset='substrate-node-template',
             type_registry=template_type_registry
         )
 
     def load_keypair(self):
-        return Keypair.create_from_mnemonic(mnemonic, address_type=address_type)
+        return Keypair.create_from_mnemonic(mnemonic, ss58_format=TEMPLATE_NODE_ADDRESS_TYPE)
 
     def compose_call(self, call_module, call_function, call_params):
         call = self.substrate.compose_call(
